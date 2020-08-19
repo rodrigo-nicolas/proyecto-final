@@ -1,0 +1,162 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    body {
+    margin: 0;
+    display: flex;
+    min-height: 100vw;
+    flex-direction: column;
+    }
+}
+
+
+
+/*Cambia nav items*/
+nav {
+    #menu-item {
+    color: white;
+    padding-right: 50px;
+    font-size: 1.2rem;
+    }
+    #menu-item:hover {
+    color: gray;
+    }
+}
+
+@media only screen  and (min-width : 1224px) {
+    #menu-item {transition: transform 0.2s;}
+    #menu-item:hover {transform: scale(1.2)}
+    /* Styles */
+    }
+    
+    
+    @media only screen  and (min-width : 1824px) {
+    #menu-item {transition: transform 0.2s;}
+    #menu-item:hover {transform: scale(1.2)}
+    /* Styles */
+}
+
+
+/*Estilo principal*/
+#principal {
+    #retrato {
+        border-radius: 50%;
+        width:315px; 
+        margin-top: 75px;
+    }
+}
+
+@media only screen  and (min-width : 1224px) {
+    #principal {
+        #bienvenido {
+            font-size: 10vw;
+        }
+        #texto-bienvenido {
+            font-size: 2.5vw;
+        }
+        #retrato {
+            width: 400px;
+        }
+    }
+}
+    
+    
+@media only screen  and (min-width : 1824px) {
+    #principal {
+        #bienvenido {
+            font-size: 10vw;
+        }
+        #texto-bienvenido {
+            font-size: 3.5vw;
+        }
+        #retrato {
+            width: 400px;
+        }
+    }
+}
+
+
+
+/*Footer fijo al pie*/
+#footer {
+    margin-top: auto;
+    background-color: black;
+    ul {
+        background-color: black;
+    }
+}
+
+#galeria {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5rem 0rem 5rem 0rem;
+
+    div {
+        position: relative;
+        padding: 0px;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover img {
+            transform: scale(1.5);
+        }
+
+        &:hover .overlay {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all .2s ease-in-out;
+        }
+
+        .overlay {
+            display: none;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            div {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+
+                h3 {
+                    color: #fff;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+/*Estilos seccion informacion*/
+#container-progreso {
+    .progress {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    padding-top: 70px;
+}
+
+/*Estilo de formulario de contacto*/ 
+#formulario-contacto {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
